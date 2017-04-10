@@ -10,10 +10,10 @@ namespace DummyClock.BackendCore
 		[JsonProperty(PropertyName = "timetables")]
 		public List<Timetables> Timetables { get; set; }
 
-        [JsonProperty(PropertyName = "is_free")]
-        public bool IsFreeDay { get; set; }
+		[JsonProperty(PropertyName = "is_free")]
+		public bool IsFreeDay { get; set; }
 
-        [JsonProperty(PropertyName = "has_error")]
+		[JsonProperty(PropertyName = "has_error")]
 		public bool HasError { get; set; }
 
 		[JsonProperty(PropertyName = "error_msg")]
@@ -23,7 +23,7 @@ namespace DummyClock.BackendCore
 	[JsonObject]
 	public class Timetables
 	{
-        [JsonProperty(PropertyName = "title")]
+		[JsonProperty(PropertyName = "title")]
 		public string Title { get; set; }
 
 		[JsonProperty(PropertyName = "activity")]

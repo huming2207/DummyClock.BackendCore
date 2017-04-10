@@ -5,6 +5,9 @@
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ptv.Net\Ptv\Ptv.csproj" />
     <ProjectReference Include="..\Rmiter\RmiterCore\RmiterCore.csproj" />

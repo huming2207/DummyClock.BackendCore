@@ -10,11 +10,11 @@ namespace DummyClock.BackendCore
 		[JsonProperty(PropertyName = "departures")]
 		public List<Departures> Departures { get; set; }
 
-        [JsonProperty(PropertyName = "has_error")]
-        public bool HasError { get; set; }
+		[JsonProperty(PropertyName = "has_error")]
+		public bool HasError { get; set; }
 
-        [JsonProperty(PropertyName = "error_msg")]
-        public string ErrorMessage { get; set; }
+		[JsonProperty(PropertyName = "error_msg")]
+		public string ErrorMessage { get; set; }
 	}
 
 	[JsonObject]
@@ -24,10 +24,10 @@ namespace DummyClock.BackendCore
 		public string Direction { get; set; }
 
 		[JsonProperty(PropertyName = "est_time")]
-		public DateTime? EstTime { get; set; }
+		public string EstTime { get; set; }
 
 		[JsonProperty(PropertyName = "schedule_time")]
-		public DateTime? ScheduleTime { get; set; }
+		public string ScheduleTime { get; set; }
 
 		[JsonProperty(PropertyName = "time_left")]
 		public string TimeLeft { get; set; }

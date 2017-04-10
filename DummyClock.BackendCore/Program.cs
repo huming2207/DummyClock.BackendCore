@@ -117,8 +117,8 @@ namespace DummyClock.BackendCore
 				departureList.Departures.Add(new Departures()
 				{
 					Direction = departItem.Platform.Direction.DirectionName,
-					EstTime = departItem.EstimatedTime,
-					ScheduleTime = departItem.ScheduledTime,
+					EstTime = departItem.EstimatedTime.Value.ToLocalTime().ToString("HH:mm"),
+					ScheduleTime = departItem.ScheduledTime.Value.ToLocalTime().ToString("HH:mm"),
 					TimeLeft = ((int)((departItem.EstimatedTime.Value.ToLocalTime() - DateTime.Now).TotalMinutes)).ToString()
 				});
 			}
